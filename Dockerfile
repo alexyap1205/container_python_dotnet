@@ -21,4 +21,4 @@ RUN wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-p
   && dpkg -i packages-microsoft-prod.deb \
   && apt-get install -y apt-transport-https \
   && apt-get update \
-  && apt-get install -y dotnet-sdk-2.1
+  && apt-get install -y dotnet-sdk-3.1
