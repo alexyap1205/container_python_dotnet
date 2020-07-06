@@ -4,7 +4,7 @@ RUN apt-get update \
   && apt-get install -y python2.7
 
 RUN apt-get update \
-  && apt-get install -y python3.7 python3-pip python3.7-dev \
+  && apt-get install -y python3.8 python3-pip python3.8-dev \
   && pip3 install --upgrade pip
 
 RUN apt-get install -y software-properties-common \
