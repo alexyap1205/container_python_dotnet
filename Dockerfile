@@ -12,7 +12,9 @@ RUN apt-get install -y software-properties-common \
   && apt-get install -y wget \
   && apt-get update
 
-RUN wget https://packages.microsoft.com/config/ubuntu/19.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb \
+RUN apt-get install -y libc6 libgcc1 libgssapi-krb5-2 libicu60 libssl1.1 libstdc++6 zlib1g
+
+RUN wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb \
   && dpkg -i packages-microsoft-prod.deb \
   && add-apt-repository universe \
   && apt-get update \
