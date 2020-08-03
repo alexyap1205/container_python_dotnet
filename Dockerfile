@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/core/sdk:2.1.807-bionic
+FROM mcr.microsoft.com/dotnet/core/sdk:2.1.808-focal
 
 RUN apt-get update \
   && apt-get install -y python2.7
